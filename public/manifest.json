@@ -1,0 +1,14 @@
+{
+  "name": "Kubecoin Shop",
+  "short_name": "Kubecoin Shop",
+  "icons": [
+    {
+      "src": "/images/kubecoin.png",
+      "sizes": "900x900",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

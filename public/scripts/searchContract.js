@@ -1,6 +1,6 @@
 /*global document:false alert:false XMLHttpRequest:false */
 
-let BLOCKCHAIN_URL = "http://anthony-blockchain.us-south.containers.mybluemix.net";
+let BLOCKCHAIN_URL = "https://anthony-blockchain.us-south.containers.mybluemix.net";
 let BLOCKCHAIN_SELLER_ID = "958ea9d6-59bf-46d5-8530-7388c5153a88";
 
 let searchButton = document.getElementById("searchId");
