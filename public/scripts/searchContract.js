@@ -124,7 +124,7 @@ function showPayload(payload) {
       messageStatus = "Successfully declined the contract!";
     }
 
-    document.getElementById("action-buttons").innerHTML = messageStatus + "<br/>Blockchain transaction Id is: " + transactionId + ".<br/>";
+    document.getElementById("action-buttons").innerHTML = messageStatus + "<br/>Blockchain transaction Id is:<br/>" + transactionId + ".<br/>";
   } else {
     document.getElementById("action-buttons").innerHTML = "Something went wrong..."
   }
