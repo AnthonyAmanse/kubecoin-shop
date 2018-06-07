@@ -1,0 +1,54 @@
+.search {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  border: 1px solid;
+  border-radius: 20px;
+  margin-bottom: 2vh;
+  transition: all 0.05s linear;
+}
+
+.search:hover {
+  border: 2px solid;
+}
+
+.searchItem {
+  margin-left: 1vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  flex-grow: 1;
+  border: 0;
+}
+
+#searchId {
+  background-image: url('/images/search_24.svg');
+  background-color: rgb(255, 255, 255, 0);
+  margin-right: 0.5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  min-width: 50px;
+  height: 50px;
+  border: 0;
+  transition: all 0.2s linear;
+}
+
+#searchId:hover {
+  transform: scale(0.9, 0.9);
+}
+
+#searchId:active {
+  transform: scale(0.7, 0.7);
+}
+
+#idToSearch {
+  background-color: rgb(255, 255, 255, 0);
+  height: 50px;
+  font-size: 20pt;
+  min-width: 0;
+  width: 200px;
+  resize: horizontal;
+  text-align: left;
+  outline: 0;
+}

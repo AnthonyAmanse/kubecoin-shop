@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kubecoin Shop</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--  content = viewport-fit=cover for iOS webapp-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="stylesheet" href="stylesheets/search-style.css">
+  <link rel="stylesheet" href="stylesheets/search-results-style.css">
+  <link rel="stylesheet" href="stylesheets/global-style.css">
+  <link rel="stylesheet" href="stylesheets/header-style.css">
+
+  <!-- iOS specific meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="/images/kubecoin.png">
+  <!-- end -->
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="title">
+      Shop
+    </div>
+  </div>
+
+  <!-- Content of page -->
+  <div class="content">
+
+    <!-- Search division -->
+    <div class="search">
+      <input class="searchItem" id="idToSearch" type="text">
+      <button class="searchItem" id="searchId" value="" />
+    </div>
+
+    <!-- Search results division -->
+    <div class="searchResults">
+
+      <!-- Contract results from search -->
+      <div class="contractContainer">
+        <div class="contractItem">
+          <div class="contractId" id="contract-id">
+            <!-- c123456 -->
+          </div>
+        </div>
+        <div class="contractItem">
+          <div class="contractQuantity" id="contract-quantity">
+            <!-- 2 x -->
+          </div>
+        </div>
+        <div class="contractItem">
+          <div class="contractProduct" id="contract-product-id">
+            <!-- <img class="productImage" src="/images/popsocket.png" alt="Popsocket" /> -->
+          </div>
+        </div>
+        <div class="contractItem">
+          <div class="contractTotalPrice" id="contract-total-price">
+            <!-- 50 kubecoins -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Confirm or decline button -->
+      <div class="actionItems" id="action-buttons">
+        <!-- <div class="actionItem">
+          <button id="declineButton">Decline</button>
+        </div>
+        <div class="actionItem">
+          <button id="confirmButton">Confirm</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/scripts/searchContract.js"></script>

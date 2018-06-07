@@ -1,0 +1,94 @@
+.searchResults {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  align-items: center;
+}
+
+.actionItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #C5004F;
+}
+
+.actionItem {
+  margin: 5pt;
+}
+
+.actionItem > button {
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14pt;
+  border-radius: 15px;
+}
+
+#confirmButton {
+  background-color: #C5004F;
+  color: #fff;
+  border: 0;
+  transition: all 0.2s linear;
+}
+
+#confirmButton:hover {
+  background-color: #E43567;
+}
+
+#confirmButton:active {
+  transform: scale(0.99, 0.99);
+  transition: all 0.01s linear;
+  background-color: #FF5580;
+}
+
+#declineButton {
+  background: none;
+  color: #C5004F;
+  border: 1.5px solid #C5004F;
+  box-shadow: none;
+}
+
+#declineButton:hover {
+  background-color: #FF739A;
+  border-color: #FF739A;
+  color: white;
+}
+
+#declineButton:active {
+  transform: scale(0.99, 0.99);
+  transition: all 0.01s linear;
+  background-color: #FF5580;
+  border-color: #FF5580;
+}
+
+.contractContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(14pt + 1.5vw);
+  color: #C5004F;
+}
+
+.contractItem {
+  margin-bottom: 1.5vh;
+}
+
+.contractId {
+  font-weight: lighter;
+}
+
+.contractQuantity {
+  font-size: calc(14pt + 0.5vw);
+}
+
+.productImage {
+  max-width: 300px;
+  height: auto;
+}
+
+.contractTotalPrice {
+  font-weight: bold;
+}
