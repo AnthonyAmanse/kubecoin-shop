@@ -1,7 +1,7 @@
 /*global document:false alert:false XMLHttpRequest:false */
 
 let BLOCKCHAIN_URL = "https://cloudcoin.us-south.containers.appdomain.cloud";
-let BLOCKCHAIN_SELLER_ID = "050c363c-b834-448b-8133-5e163de5ecd8";
+let BLOCKCHAIN_SELLER_ID = "4887d26e-03c5-4d3a-a74a-87f60828961d";
 
 let searchButton = document.getElementById("searchId");
 searchButton.addEventListener("click", searchContractById);
@@ -13,7 +13,7 @@ function searchContractById() {
   var args = $('#idToSearch').val().toLowerCase().split(',');
   var input = {
     type: type,
-    queue: "seller_queue-thinkistanbul",
+    queue: "seller_queue-ehin",
     params: {
       userId: userId,
       fcn: fcn,
@@ -170,7 +170,7 @@ function completeContract() {
   args.unshift(userId);
   var input = {
     type: type,
-    queue: "seller_queue-thinkistanbul",
+    queue: "seller_queue-ehin",
     params: {
       userId: userId,
       fcn: fcn,
@@ -192,7 +192,7 @@ function declineContract() {
   args.unshift(userId);
   var input = {
     type: type,
-    queue: "seller_queue-thinkistanbul",
+    queue: "seller_queue-ehin",
     params: {
       userId: userId,
       fcn: fcn,
