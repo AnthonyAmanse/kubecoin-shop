@@ -1,7 +1,7 @@
 /*global document:false alert:false XMLHttpRequest:false */
 
-let BLOCKCHAIN_URL = "https://anthony-blockchain.us-south.containers.mybluemix.net";
-let BLOCKCHAIN_SELLER_ID = "958ea9d6-59bf-46d5-8530-7388c5153a88";
+let BLOCKCHAIN_URL = "https://cloudcoin.us-south.containers.appdomain.cloud";
+let BLOCKCHAIN_SELLER_ID = "5875752f-74f9-46a1-b0a9-3822a42ddcda";
 
 let searchButton = document.getElementById("searchId");
 searchButton.addEventListener("click", searchContractById);
@@ -13,7 +13,7 @@ function searchContractById() {
   var args = $('#idToSearch').val().toLowerCase().split(',');
   var input = {
     type: type,
-    queue: "seller_queue",
+    queue: "seller_queue-cfsummit",
     params: {
       userId: userId,
       fcn: fcn,
@@ -170,7 +170,7 @@ function completeContract() {
   args.unshift(userId);
   var input = {
     type: type,
-    queue: "seller_queue",
+    queue: "seller_queue-cfsummit",
     params: {
       userId: userId,
       fcn: fcn,
@@ -192,7 +192,7 @@ function declineContract() {
   args.unshift(userId);
   var input = {
     type: type,
-    queue: "seller_queue",
+    queue: "seller_queue-cfsummit",
     params: {
       userId: userId,
       fcn: fcn,
