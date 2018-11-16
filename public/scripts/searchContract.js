@@ -1,7 +1,24 @@
 /*global document:false alert:false XMLHttpRequest:false */
 
 let BLOCKCHAIN_URL = "https://cloudcoin.us-south.containers.appdomain.cloud";
-let BLOCKCHAIN_SELLER_ID = "4887d26e-03c5-4d3a-a74a-87f60828961d";
+
+function getParameterByName(name) {
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+console.log(getParameterByName("event"));
+
+var BLOCKCHAIN_SELLER_ID = "a545e96c-9229-45ed-afce-73172a52bccb";
+var eventForShop = "oredev"
+eventForShop = getParameterByName("event");
+if (eventForShop == "oredev") {
+  BLOCKCHAIN_SELLER_ID = "a545e96c-9229-45ed-afce-73172a52bccb"
+} else if (eventForShop == "thinkstockholm") {
+  BLOCKCHAIN_SELLER_ID = "a4eea032-bf8f-4c6b-98f8-5b9d4cc44550"
+}
 
 let searchButton = document.getElementById("searchId");
 searchButton.addEventListener("click", searchContractById);
@@ -13,7 +30,7 @@ function searchContractById() {
   var args = $('#idToSearch').val().toLowerCase().split(',');
   var input = {
     type: type,
-    queue: "seller_queue-ehin",
+    queue: "seller_queue-" + eventForShop,
     params: {
       userId: userId,
       fcn: fcn,
@@ -170,7 +187,7 @@ function completeContract() {
   args.unshift(userId);
   var input = {
     type: type,
-    queue: "seller_queue-ehin",
+    queue: "seller_queue-" + eventForShop,
     params: {
       userId: userId,
       fcn: fcn,
@@ -192,7 +209,7 @@ function declineContract() {
   args.unshift(userId);
   var input = {
     type: type,
-    queue: "seller_queue-ehin",
+    queue: "seller_queue-" + eventForShop,
     params: {
       userId: userId,
       fcn: fcn,
