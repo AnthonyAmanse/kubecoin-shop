@@ -18,6 +18,10 @@ if (eventForShop == "oredev") {
   BLOCKCHAIN_SELLER_ID = "a545e96c-9229-45ed-afce-73172a52bccb"
 } else if (eventForShop == "thinkstockholm") {
   BLOCKCHAIN_SELLER_ID = "a4eea032-bf8f-4c6b-98f8-5b9d4cc44550"
+} else if (eventForShop == "umeatech") {
+  BLOCKCHAIN_SELLER_ID = "f72b18e4-4ac9-4499-9ee7-e8abcc30e973"
+} else if (eventForShop == "slush") {
+  BLOCKCHAIN_SELLER_ID = "5e614e69-9321-4ccc-93e9-8f175da73fa2"
 }
 
 let searchButton = document.getElementById("searchId");
